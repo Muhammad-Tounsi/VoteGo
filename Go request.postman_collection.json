@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "b5f2b09e-00f3-4c63-a8f7-c82a90a1e482",
+		"name": "Go request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"steven@gmail.com\",\n\t\"password\" : \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				},
+				"description": "email & password\n{\n\t\"email\":,\n\t\"password\":\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\": \"shhhky@gmail.com\",\r\n    \"firstname\": \"vjky\",\r\n    \"lastname\": \"Vakkjl\",\r\n    \"access_level\": 1,\r\n    \"date_of_birth\": \"1992-02-08T00:00:00Z\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "get user with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"firstname\": \"Ssssteven\",\n\t \"email\":\"sky2@gmail.com\",\n     \"lastname\": \"Victor2222\",\n     \"password\" : \"Password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/2?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIwOTg5MTksInVzZXJfaWQiOjJ9.ksBi1UdM8qzXJkwMk6-AF7ZPSM6fCFFjzwRZM8YvyBY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIwOTg5MTksInVzZXJfaWQiOjJ9.ksBi1UdM8qzXJkwMk6-AF7ZPSM6fCFFjzwRZM8YvyBY"
+						}
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/2?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIwOTg5MTksInVzZXJfaWQiOjJ9.ksBi1UdM8qzXJkwMk6-AF7ZPSM6fCFFjzwRZM8YvyBY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIwOTg5MTksInVzZXJfaWQiOjJ9.ksBi1UdM8qzXJkwMk6-AF7ZPSM6fCFFjzwRZM8YvyBY"
+						}
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "Create vote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Title\":     \"Propreté des trottoirs\",\r\n\t\"AuthorID\" : 3,\r\n\t\"Desc\":      \"nouveau vote .\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/votes?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIxMDE1OTQsInVzZXJfaWQiOjF9.eExI-lVDCX99upQx6AhOUkKuOGM7LirG2zbCjTv-lZ0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"votes"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIxMDE1OTQsInVzZXJfaWQiOjF9.eExI-lVDCX99upQx6AhOUkKuOGM7LirG2zbCjTv-lZ0"
+						}
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "get all votes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"votes"
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "get votes with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/votes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"votes",
+						"1"
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "update vote",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzE5NDQyOTcsInVzZXJfaWQiOjF9.KmzFybp44OLv1z-a4-tfG9es5kgizsgiTagl3mrGvOM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\":     \"Propreté des trottoirs\",\n\t\"Desc\":      \"Dans le budget qui sera soumis au vote des conseillers de Paris lundi, 32 M€ seront consacrés à l’achat de nouvelles machines, plus silencieuses, plus propres et plus performantes. Il n’y aura pas d’embauche d’agents supplémentaires.\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/votes/1?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzE5NDU3ODYsInVzZXJfaWQiOjF9.32TrM2D4U4PLB0ksfTOt7D2iTQivoMOpkEvckky9UPc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"votes",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzE5NDU3ODYsInVzZXJfaWQiOjF9.32TrM2D4U4PLB0ksfTOt7D2iTQivoMOpkEvckky9UPc"
+						}
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		},
+		{
+			"name": "delete vote",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/votes/1?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIxMDE1OTQsInVzZXJfaWQiOjF9.eExI-lVDCX99upQx6AhOUkKuOGM7LirG2zbCjTv-lZ0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"votes",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE1NzIxMDE1OTQsInVzZXJfaWQiOjF9.eExI-lVDCX99upQx6AhOUkKuOGM7LirG2zbCjTv-lZ0"
+						}
+					]
+				},
+				"description": "sqdqsd"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
