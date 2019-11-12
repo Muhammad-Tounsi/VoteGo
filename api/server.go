@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/Muhammad-Tounsi/Vote-Go-Vue/api/controllers"
-	"github.com/Muhammad-Tounsi/Vote-Go-Vue/api/seed"
+	"github.com/Muhammad-Tounsi/VoteGo/api/controllers"
+	"github.com/Muhammad-Tounsi/VoteGo/api/seed"
 )
 
 var server = controllers.Server{}

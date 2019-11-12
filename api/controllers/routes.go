@@ -1,6 +1,6 @@
 package controllers
 
-import "github.com/Muhammad-Tounsi/Vote-Go-Vue/api/middlewares"
+import "github.com/Muhammad-Tounsi/VoteGo/api/middlewares"
 
 func (s *Server) initializeRoutes() {
 
@@ -20,8 +20,8 @@ func (s *Server) initializeRoutes() {
 	//votes routes
 	s.Router.HandleFunc("/votes", middlewares.SetMiddlewareJSON(s.Createvote)).Methods("POST")
 	s.Router.HandleFunc("/votes", middlewares.SetMiddlewareJSON(s.Getvotes)).Methods("GET")
-	s.Router.HandleFunc("/votes/{id}", middlewares.SetMiddlewareJSON(s.Getvote)).Methods("GET")
-	s.Router.HandleFunc("/vote/{id}", middlewares.SetMiddlewareJSON(middlewares.SetMiddlewareAuthentication(s.Addvote))).Methods("PUT")
+	s.Router.HandleFunc("/votes/Update/{id}", middlewares.SetMiddlewareJSON(s.Getvote)).Methods("GET")
+	s.Router.HandleFunc("/votes/Add/{id}", middlewares.SetMiddlewareJSON(middlewares.SetMiddlewareAuthentication(s.Addvote))).Methods("PUT")
 	s.Router.HandleFunc("/votes/{id}", middlewares.SetMiddlewareJSON(middlewares.SetMiddlewareAuthentication(s.Updatevote))).Methods("PUT")
 	s.Router.HandleFunc("/votes/{id}", middlewares.SetMiddlewareAuthentication(s.Deletevote)).Methods("DELETE")
 }

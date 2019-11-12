@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/Muhammad-Tounsi/Vote-Go-Vue/api/auth"
-	"github.com/Muhammad-Tounsi/Vote-Go-Vue/api/responses"
+	"github.com/Muhammad-Tounsi/VoteGo/api/auth"
+	"github.com/Muhammad-Tounsi/VoteGo/api/responses"
 )
 
 // SetMiddlewareJSON : This will format all responses to JSON

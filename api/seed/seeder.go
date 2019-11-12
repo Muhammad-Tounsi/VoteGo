@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 	
-	"github.com/Muhammad-Tounsi/Vote-Go-Vue/api/models"
+	"github.com/Muhammad-Tounsi/VoteGo/api/models"
 	"github.com/jinzhu/gorm"
 )
 
