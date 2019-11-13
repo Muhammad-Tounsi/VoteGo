@@ -12,7 +12,7 @@ Vote App is an application that allows users to vote online on draft laws.
 - Clone project anywhere on your computer.
 
 ```
-git clone https://github.com/muhammad-tounsi/vote-go-vue.git
+git clone https://github.com/muhammad-tounsi/vVoteGo.git
 ```
 - Install all the dependencies
 
